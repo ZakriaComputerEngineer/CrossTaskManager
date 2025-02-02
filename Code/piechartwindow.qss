@@ -1,0 +1,84 @@
+/* General styling for PieChartWindow */
+QWidget {
+    background-color: #f8f9fa; /* Very light grey background */
+    color: #555151; /* Dark text color for good contrast */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/* Title of the pie chart window */
+QWidget#PieChartWindow {
+    border: 2px solid #1e90ff; /* Dodger blue border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px;
+    background-color: #ffffff; /* White background for contrast */
+}
+
+/* Title styling for each chart */
+QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1e90ff; /* Dodger blue for titles */
+    margin: 5px 0;
+}
+
+/* Styling for the pie chart canvas */
+QGraphicsView {
+    background-color: #ffffff; /* White background for charts */
+    border: 2px solid #cccccc; /* Subtle border to separate */
+    border-radius: 5px;
+}
+
+/* Spacing between the widgets in the grid layout */
+QGridLayout {
+    margin: 15px;
+    spacing: 10px;
+}
+
+/* Tooltip styling */
+QToolTip {
+    background-color: #1e90ff; /* Dodger blue background */
+    color: #ffffff; /* White text */
+    border: 1px solid #cccccc; /* Light grey border */
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/* Highlight on hover for the chart sections */
+QWidget:hover {
+    background-color: #f5f5f5; /* Slightly lighter grey when hovered */
+}
+
+/* Text for Free/Used and Percentages */
+QLabel#FreeLabel,
+QLabel#UsedLabel {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: #1e90ff; /* Dodger blue background for Free/Used */
+    color: #ffffff; /* White text for high contrast */
+}
+
+QLabel#PercentageLabel {
+    font-size: 16px;
+    padding: 4px;
+    font-weight: bold;
+    background-color: #16a085; /* Teal for percentages */
+    color: #ffffff; /* White text for percentages */
+    border-radius: 4px;
+}
+
+/* Horizontal Bar Styling */
+QProgressBar {
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+    background-color: #e0e0e0; /* Light grey background */
+    color: #555555; /* Dark grey text color */
+}
+
+QProgressBar::chunk {
+    background-color: #999999; /* Neutral grey chunk */
+    margin: 1px;
+    border-radius: 3px;
+}

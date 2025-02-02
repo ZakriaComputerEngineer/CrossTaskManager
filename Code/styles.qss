@@ -1,0 +1,128 @@
+/* General style for the main application */
+QWidget {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border: 2px solid black; /* Black border around the application content */
+    border-radius: 12px; /* Rounded edges for the main window */
+}
+
+/* Tabs style */
+QTabBar::tab {
+    background-color: #34495e;
+    color: #ecf0f1;
+    border: 1px solid #2c3e50;
+    padding: 8px;
+    border-radius: 8px; /* Rounded edges for tabs */
+    height: 25px;  /* Set the height of the tab button */
+    width: 75px;  /* Set the width of the tab button */
+    font-size: 14px;  /* Optional: Set font size */
+}
+
+QTabBar::tab:hover {
+    background-color: #2980b9; /* Blue highlight on hover */
+    color: #ecf0f1;
+}
+
+QTabBar::tab:selected {
+    background-color: #1abc9c; /* Teal for active tab */
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+/* Table Widget */
+QTableWidget {
+    background-color: #34495e;
+    gridline-color: #2c3e50;
+    color: #ecf0f1;
+    border: 1px solid #2c3e50;
+    border-radius: 8px; /* Rounded edges for the table */
+}
+
+QTableWidget::item:hover {
+    background-color: #1abc9c; /* Highlight table rows on hover */
+    color: #2c3e50;
+}
+
+/* Table Header */
+QHeaderView::section {
+    background-color: #1abc9c; /* Teal header background */
+    color: #2c3e50;           /* Dark text for visibility */
+    font-weight: bold;
+    border: 1px solid #16a085;
+    padding: 4px;
+    border-radius: 6px; /* Rounded edges for headers */
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #1abc9c;
+    color: #2c3e50;
+    border: 2px solid #16a085;
+    border-radius: 8px; /* Rounded edges for buttons */
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: #16a085; /* Darker teal on hover */
+    color: #ecf0f1;
+    border-color: #1abc9c;
+}
+
+/* Scrollbar */
+QScrollBar:vertical {
+    background-color: #2c3e50;
+    width: 12px;
+    margin: 16px 0 16px 0;
+    border-radius: 6px; /* Rounded scrollbar */
+}
+
+QScrollBar::handle:vertical {
+    background-color: #1abc9c;
+    min-height: 20px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #16a085; /* Darker teal on hover */
+}
+
+/* Customize the hover effect for tab area */
+QTabWidget::pane {
+    border: 1px solid #34495e;
+    border-radius: 8px; /* Rounded edges for tab widget */
+}
+
+/* Graph styling */
+QGraphicsView {
+    background-color: #34495e;
+    border: 2px solid #1abc9c;
+    border-radius: 12px; /* Rounded edges for graphs */
+}
+
+QGraphicsView:hover {
+    border-color: #16a085; /* Highlight border on hover */
+}
+
+/* Labels for the graphs */
+QLabel {
+    color: #ecf0f1;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 4px;
+}
+
+/* Horizontal Bar Styling */
+QProgressBar {
+    border: 2px solid #1abc9c;
+    border-radius: 8px;
+    background-color: #34495e;
+    color: #ecf0f1; /* Text color for percentage */
+}
+
+QProgressBar::chunk {
+    background-color: #16a085; /* Teal color for progress */
+    border-radius: 6px;
+    margin: 2px;
+}
